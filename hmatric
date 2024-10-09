@@ -1,0 +1,16 @@
+% Set dimensions for the parity-check matrix H (m x n)
+m = 4;  % number of parity bits (rows)
+n = 10;  % number of total bits (columns)
+
+% Generate a random sparse binary matrix
+% Set sparsity by limiting the number of ones
+H = zeros(m, n);
+for i = 1:m
+    % Randomly select positions for '1's in each row
+    ones_pos = randperm(n, 4);  % e.g., 4 ones per row for simplicity
+    H(i, ones_pos) = 1;
+end
+
+% Display the generated parity-check matrix H
+disp('Generated Parity-Check Matrix H:');
+disp(H);
