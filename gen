@@ -1,0 +1,15 @@
+% Define the parity-check matrix H (must be full-rank)
+H = [1 1 0 0 1 0;
+     0 1 1 0 0 1;
+     1 0 1 1 0 0];
+
+% Partition H as [P | I] where P is a 3x3 matrix and I is a 3x3 identity matrix
+P = H(:, 1:3);  % Parity part
+I = eye(3);     % Identity matrix
+
+% Derive G matrix: G = [I | P']
+G = [I P'];
+
+% Display the generated generator matrix G
+disp('Generated Generator Matrix G:');
+disp(G);
