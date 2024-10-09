@@ -1,0 +1,21 @@
+### ENCODING THE DATA
+% Define the data (6-bit)
+data = [1 0 1 0 1 0];
+
+% Define the generator matrix G (6x9)
+G = [1 0 0 0 0 0 1 0 1;
+     0 1 0 0 0 0 0 1 0;
+     0 0 1 0 0 0 1 1 0;
+     0 0 0 1 0 0 0 0 1;
+     0 0 0 0 1 0 1 0 0;
+     0 0 0 0 0 1 0 1 1];
+
+% Encode the data (data * G)
+encoded_data = mod(data * G, 2);
+
+% Display the encoded data (codeword)
+disp('Encoded data (codeword):');
+disp(encoded_data);
+
+
+OUTPUT: ### codeword ###
