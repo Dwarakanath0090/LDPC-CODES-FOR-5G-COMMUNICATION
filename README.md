@@ -24,8 +24,7 @@ LDPC codes are easier to implement in hardware due to their simpler structure (s
 #### IMPLEMENTATION
 ### Implementation was done in  MATLAB
 * MATLAB: MATLAB (Matrix Laboratory) is a powerful software used for numerical computing, data analysis, and algorithm development. It is widely used in engineering and scientific fields for tasks like simulation, modeling, and solving complex mathematical problems. With its built-in functions and toolboxes, MATLAB is especially helpful for working with matrices, implementing algorithms, and visualizing data.
-
-#### PERFORMANCE ANALYSIS
+  
 #### CONCLUSION:
 LDPC (Low-Density Parity-Check) codes play an important role in improving the reliability and efficiency of 5G communication. They help correct errors in transmitted data, which is essential for ensuring data stays accurate in fast networks. LDPC codes reduce delays and increase data speeds, which is key for advanced 5G applications like the Internet of Things (IoT), self-driving cars, and low-latency communication. By using LDPC codes, we make data transmission more reliable and efficient, which is critical for the future of wireless communication.
 
